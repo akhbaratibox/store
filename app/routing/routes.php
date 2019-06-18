@@ -1,8 +1,13 @@
 <?php
 
 $router = new AltoRouter();
-$router->map('GET','/about','','abbout_us');
+
+
+#this line means if someone try access / then show method run
+$router->map('GET','/','App\controllers\indexController@show','home');
 
 $match = $router->match();
 
-var_dump($match);
+
+
+
