@@ -1,31 +1,22 @@
 {
-    "autoload": {
-
-
-
-        "psr-4": {
-            "App\\": "app"
+    "autoload":{
+        "psr-4":{
+            "App\\":"app"
         },
-
-        "files": ["app/functions/helper.php"
-
-        ]
-
-
+        "files": ["app/functions/helper.php"]
     },
     "require": {
-        "vlucas/phpdotenv": "^3.3",
+        "vlucas/phpdotenv": "^2.4",
         "altorouter/altorouter": "^1.2",
         "philo/laravel-blade": "^3.1",
-        "illuminate/database": "^5.8",
-        "phpmailer/phpmailer": "^6.0"
-
+        "illuminate/database": "^5.4",
+        "phpmailer/phpmailer": "^5.2"
     },
-    "require-dev": {
-        "filp/whoops": "^2.4"
-
+    "require-dev":{
+        "filp/whoops": "^2.1"
     },
-    "config": {
-        "optimize-autoloader": true
+    "config":{
+        "optimize-autoloader":true
     }
+
 }

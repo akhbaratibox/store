@@ -1,11 +1,9 @@
 {
-  "name": "ecommerce",
+  "name": "acme-store",
   "dependencies": {
-    "foundation-sites": "^6.5.3",
-    "motion-ui": "^2.0.3",
-    "slick-carousel": "^1.8.1"
-  },
-  "devDependencies": {
-    "motion-ui": "^2.0.3"
+    "foundation-sites": "^6.3.1",
+    "jquery": "~2.2",
+    "motion-ui": "^1.2.2",
+    "slick-carousel": "^1.6.0"
   }
 }

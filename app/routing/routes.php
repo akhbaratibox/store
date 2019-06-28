@@ -1,13 +1,6 @@
 <?php
+$router = new AltoRouter;
+$router->map('GET', '/', 'App\Controllers\IndexController@show', 'home');
 
-$router = new AltoRouter();
-
-
-#this line means if someone try access / then show method run
-$router->map('GET','/','App\controllers\indexController@show','home');
-
-$match = $router->match();
-
-
-
-
+//for admin routes
+$router->map('GET', '/admin', 'App\Controllers\Admin\DashboardController@show', 'admin_dashboard');

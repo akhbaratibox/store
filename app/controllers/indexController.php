@@ -1,34 +1,27 @@
 <?php
 
 namespace App\Controllers;
-
-
-use App\classes\Mail;
+use App\Classes\Mail;
 
 class IndexController extends BaseController
 {
-    
     public function show()
     {
         echo "Inside Homepage from controller class";
-
-        echo "test email..";
-
-        echo "<br>";
-
         $mail = new Mail();
+        
         $data = [
-            'to' => 'makhbarati@gmail.com',
-            'subject' => 'hi wellcome to',
+            'to' => 'support@devscreencast.com',
+            'subject' => 'Welcome to Acme Store',
             'view' => 'welcome',
-            'name' => 'mohammad akhbarati',
-            'body' => 'test template',
-
+            'name' => 'John Doe',
+            'body' => "Testing email template"
         ];
+        
         if($mail->send($data)){
-            echo "email send successfuly";
+            echo "Email sent successfully";
         }else{
-            echo "not email send ";
+            echo "Email sending failed";
         }
     }
 }
