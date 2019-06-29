@@ -4,7 +4,7 @@
     <h3> Welcome Admin </h3>
     
     <div class="image-holder text-center">
-        <img src="/images/store.png" alt="Terry" title="Admin">
+        <img src="/images/store.png" alt="mohammad" title="Admin">
         <p>mohammad akhbarati</p>
     </div>
     
