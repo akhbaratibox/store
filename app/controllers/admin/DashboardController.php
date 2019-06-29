@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers\Admin;
 
+use App\classes\Request;
 use App\Classes\Session;
 use App\Controllers\BaseController;
 
@@ -18,5 +19,12 @@ class DashboardController extends BaseController
             $msg = 'Not defined';
         }
         return view('admin/dashboard', ['admin' => $msg]);
+    }
+
+    public function get()
+    {
+
+        $request = Request::get('post');
+        var_dump($request);
     }
 }
